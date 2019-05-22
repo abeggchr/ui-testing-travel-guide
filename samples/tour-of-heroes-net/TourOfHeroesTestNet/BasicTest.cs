@@ -27,12 +27,14 @@ namespace TourOfHeroesTestNet
             var searchInput = _driver.FindElement(By.CssSelector("#search-box"));
             searchInput.SendKeys("Narco");
 
-            // wait until UI is updated (don't use Sleep() in a real project)
+            // wait until UI is updated (do not use Sleep in your codebase)
             Thread.Sleep(1000);
 
-            // assert there was a single search result found and that it text is Narco
+            // assert there was a single search result found
             var searchResults = _driver.FindElements(By.CssSelector("app-hero-search ul.search-result > li"));
             Assert.Single(searchResults);
+
+            // assert search result was Narco
             var searchResult = searchResults.First();
             Assert.Equal("Narco", searchResult.Text);
         }

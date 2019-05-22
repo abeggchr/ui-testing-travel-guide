@@ -1,0 +1,17 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "ng e2e",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/samples/tour-of-heroes/node_modules/protractor/bin/protractor",
+            "protocol": "inspector",
+            "args": ["${workspaceFolder}/samples/tour-of-heroes/e2e/protractor.conf.js"]
+          }
+    ]
+}
