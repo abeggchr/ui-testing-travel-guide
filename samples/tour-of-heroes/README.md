@@ -9,4 +9,9 @@ Run:
 * ng e2e
 
 Modifications:
-* ...
+* added protractor base test
+* adde Cypress
+
+
+Run Cypress:
+* npm run cypress:open
