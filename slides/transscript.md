@@ -50,6 +50,7 @@ There are commercial products like "Ranorex" or "Tosca". The come with a price t
 * testing non-web UIs 
 * test data generation
 * test case recording
+* test-data setup
 
 What both of them have in common is the ability to also run Selenium tests. Ranorex refers to Selenium as "todays web test automation standard".
 
@@ -259,6 +260,102 @@ TODO How to prevent that?
 
 *Related Pattern*: see other patterns in this chapter "External Systems"
 
+### Test Data
+
+*Problem*: Tests build on a certain state.
+
+*Requirements": 
+* test data setup and management is as close a possible to the test code
+* test do not depend on each other, so their test data is separated / do not depend on shared test data (except reference data)
+
+#### Pattern: DB Dump
+
+*Solution*: 
+
+*Advantages*:
+
+* restoring a DB snapshot/backup allows to start testing very fast
+
+*Drawbacks*: 
+
+* test data management is far away from the test implementation
+* using DB modification scripts to setup the test data is cumbersome 
+
+*Related Pattern*: see other patterns in this chapter "Test Data"
+
+
+#### Pattern: Test Data Generator
+
+*Solution*: 
+
+*Advantages*:
+
+* improved test data management / overview
+* re-use of builders from integrationtests possible
+* can also feed your external system simulators
+
+*Drawbacks*: 
+
+* test data management is far away from the test implementation
+* executing the generator might setup the data required for all test leading to slow execution during development
+* implementing a test data reset/update mechanism (once the test changed the data) is hard
+* going back to a DB snapshot and re-running the generator is time consuming
+* expensive to implement
+
+*Related Pattern*: see other patterns in this chapter "Test Data"
+
+
+#### Pattern: Test setups Test Data directly in DB
+
+*Solution*: 
+
+*Advantages*:
+
+* re-use of builder from integrationtests 
+* faster test setup 
+* only setting up the data required data (for a single test during development)
+
+*Drawbacks*: 
+
+* reusing builders from integration test is hard to implement when tests are implemented (i.e. TypeScript) in another language than in the backend (i.e. C#), calling .NET code from TypeScript is theoretically possible using Edge.js but such an attempt failed in one project because it requires node to be installed which was not possible then
+* when using different languages in test and backend and connecting to DB directly from the test
+
+
+*Related Pattern*: see other patterns in this chapter "Test Data"
+
+
+#### Pattern: Test setups Test Data using Web API
+
+*Solution*: 
+
+*Advantages*:
+
+* 
+
+*Drawbacks*: 
+
+* either exposing test-only endpoints in productive code
+* when using different languages in test and backend: leads to kind of a duplication of the builder infrastructure in the two languages
+
+*Related Pattern*: see other patterns in this chapter "Test Data"
+
+
+#### Pattern: Test setups Test Data while testing
+
+*Solution*: 
+
+*Advantages*:
+
+* no infrastructure required
+
+*Drawbacks*: 
+
+* works only in limited cases
+* tests are force not to test "a single thing"
+* slower test execution
+
+*Related Pattern*: see other patterns in this chapter "Test Data"
+
 ## How to implement maintainble tests
 
 ### Pattern: Page Object
@@ -273,7 +370,14 @@ TODO How to prevent that?
 
 *Drawbacks*: 
 
-* 
+*
+
+From related article "App Action":
+
+* Page objects are hard to maintain and take away time from actual application development. I have never seen PageObjects documented well enough to actually help one write tests.
+* Page objects introduce additional state into the tests, which is separate from the application’s internal state. This makes understanding the tests and failures harder.
+* Page objects try to fit multiple cases into a uniform interface, falling back to conditional logic - a huge anti-pattern in our opinion.
+* Page objects make tests slow because they force the tests to always go through the application user interface.
 
 *Related Pattern*: "App Actions" (see https://www.cypress.io/blog/2019/01/03/stop-using-page-objects-and-start-using-app-actions/)
 
