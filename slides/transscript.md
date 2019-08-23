@@ -125,7 +125,9 @@ UI tests are slow and costly
 
 ### Granularity
 
-*Problem*: UI tests are costly to implement and slow to execute. Non-functional requirements of a UI test include:
+*Problem*: UI tests are costly to implement and slow to execute. 
+
+Non-functional requirements of a UI test include:
 
 * Reliability: a UI test suceeding once should succeed always when nothing in the application or test code as changed
 * Maintainability: a change in the UI structure should have as little impact to the test implementation as possible
@@ -181,7 +183,7 @@ UI tests are slow and costly
 
 *Related Pattern*: see other patterns in this chapter "Granularity"
 
-### Pattern: Many (> 100) small UI tests
+#### Pattern: Many (> 100) small UI tests
 
 *Solution*: Test cases are split into small parts. These parts test a dedicated functionality. Test depend on each other. Example: there is a test A which tests the login functionality. And then there are two other tests B and C depending on the fact, that login is working. Even though they probably log in as well, they will not be executed when the test A fails.
 
@@ -404,15 +406,14 @@ From related article "App Action":
 
 ### Pattern: Implicit wait
 
-*Solution*: Selenium has the possiblity to switch implicit wait on. An implicit wait is to tell WebDriver to poll the DOM for a certain amount of time when trying to find an element or elements if they are not immediately available. The default setting is 0. 
+*Solution*: Selenium has the possiblity to switch implicit wait on. An implicit wait is to tell WebDriver to poll the DOM for a certain amount of time when trying to find an element or elements if they are not immediately available. The default setting is 0 which means implicit wait is disabled. 
 
 *Advantages*:
 
-* 
+* promise to just work
 
 *Drawbacks*: 
 
-* From documentation: Do not mix implicit and explicit waits! Doing so can cause unpredictable wait times. 
 * there are more wait conditions checked than nescessary which results in slower execution time
 
 *Related Pattern*: see in this chapter
