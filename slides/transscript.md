@@ -398,7 +398,34 @@ From related article "App Action":
 
 * attribute has to be added, most probably during development of the test
 
-*Related Pattern*: -
+*Related Pattern*: Self-Healing Automation
+
+### Pattern: Self-Healing Automation
+
+*Problem*: In order for an automated test to select an element on the page, a selector (aka. locator) has to be defined. These selectors might change while the application is developed without the test being updated.
+
+*Solution*: Use a product with a "self-healing" functionality. They, sometimes supported by an AI, learn when a particular selector changed its selector and it adjusts the selector while the test is running.
+
+*Advantages*:
+
+* more reliable
+
+*Drawbacks*: 
+
+* changes to the test have to be accepted at some point
+
+*Products*:
+
+* recheck-web (Demo)
+* Applitools
+* mabl
+* Perfecto
+
+See also: https://www.yammer.com/zuehlke.com/threads/303810815508480
+
+*Related Pattern*: Selector with data-attribute
+
+*Demo*: Recheck / Java
 
 ## How to implement reliable tests
 

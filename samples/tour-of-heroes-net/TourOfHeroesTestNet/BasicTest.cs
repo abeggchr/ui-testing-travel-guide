@@ -28,7 +28,7 @@ namespace TourOfHeroesTestNet
             searchInput.SendKeys("Narco");
 
             // wait until UI is updated (do not use Sleep in your codebase)
-            Thread.Sleep(1000);
+            Thread.Sleep(500);
 
             // assert there was a single search result found
             var searchResults = _driver.FindElements(By.CssSelector("app-hero-search ul.search-result > li"));
