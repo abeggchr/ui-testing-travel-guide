@@ -15,7 +15,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import de.retest.recheck.Recheck;
 import de.retest.web.RecheckWebImpl;
-import de.retest.web.selenium.RecheckDriver;
+import de.retest.web.selenium.UnbreakableDriver;
 
 public class BasicTestWithRecheck {
 	
@@ -26,7 +26,7 @@ public class BasicTestWithRecheck {
     public void BrowserOpen() throws IOException {
     	setChromedriverPath();
 
-    	driver = new RecheckDriver( new ChromeDriver() );
+    	driver = new UnbreakableDriver( new ChromeDriver() );
     	re = new RecheckWebImpl();
     }
 
