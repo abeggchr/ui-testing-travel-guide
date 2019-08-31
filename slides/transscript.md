@@ -267,6 +267,8 @@ In order to have stable environment for running UI tests, locally but on the bui
 
 *Problem*: Tests build on a certain state.
 
+*Solution*: Test data is setup in each test, by reading it from some file, such as .json. 
+
 *Requirements": 
 * test data setup and management is as close a possible to the test code
 * test do not depend on each other, so their test data is separated / do not depend on shared test data (except reference data)
