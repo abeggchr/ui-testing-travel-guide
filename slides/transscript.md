@@ -312,7 +312,7 @@ In order to have stable environment for running UI tests, locally but on the bui
 
 #### Pattern: Test setups Test Data directly in DB
 
-*Solution*: 
+*Solution*: Test data is setup directly in DB from the test.
 
 *Advantages*:
 
