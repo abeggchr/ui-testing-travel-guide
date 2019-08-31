@@ -370,13 +370,14 @@ In order to have stable environment for running UI tests, locally but on the bui
 
 ### Pattern: Page Object
 
-*Problem*: 
+*Problem*: Instead of ad-hoc interactions with a page, a test controls the page using an instance that represents the page user interface.
 
-*Solution*: include also basic elements, nested selectors, documentation: Protractor docu, Scenarioo demo
+*Solution*: Page Objects are used to make end-to-end tests readable and easy to maintain. 
 
 *Advantages*:
 
-* 
+* They keep all page element selectors in one place.
+* They standardize how tests interact with the page.
 
 *Drawbacks*: 
 
