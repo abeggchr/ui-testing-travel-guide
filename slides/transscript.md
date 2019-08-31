@@ -243,6 +243,7 @@ In order to have stable environment for running UI tests, locally but on the bui
 
 * the communication from your application to the external system is not tested
 * having no test code in your productive codebase is a challenge
+* could be potentialy misaligned with the real system if not mocked correctly or in proper level of detail.
 
 *Related Pattern*: see other patterns in this chapter "External Systems"
 
