@@ -224,7 +224,7 @@ Cons:
 
 With so many libraries and applications (Browser, Selenium Server, Selenium library, Protractor library) it happens that tests run on one environment and fail in another due to different versions. 
 
-TODO How to prevent that?
+In order to have stable environment for running UI tests, locally but on the build server also, we need to fix versions of Selenium Server, Chrome driver version, as well as NPM package version which is used to install Selenium standalone. They need to be the same on the build server as it is locally, so that we can have reliable tests.
 
 ### External Systems
 
