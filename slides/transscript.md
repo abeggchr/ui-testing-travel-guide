@@ -329,11 +329,11 @@ In order to have stable environment for running UI tests, locally but on the bui
 
 #### Pattern: Test setups Test Data using Web API
 
-*Solution*: 
+*Solution*: Test setup data by using Web API in the backend to perform parts of a test setup
 
 *Advantages*:
 
-* 
+* tests that are faster, more focused, and more reliable.
 
 *Drawbacks*: 
 
