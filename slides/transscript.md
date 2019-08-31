@@ -48,7 +48,6 @@ First of all, you have to decide whether or not to use Selenium at all. So what 
 * Katalon Studio - Record/playback with page object models support.
 * Screenster - Visual testing, automatic verification, self-healing locators, automatic waits, codeless test maintenance. 
 
-
 #### Commercial Products
 
 There are commercial products like "Ranorex" or "Tosca". The come with a price tag and a lot of features you probably do not need like:
