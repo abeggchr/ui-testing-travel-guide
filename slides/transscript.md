@@ -345,7 +345,7 @@ In order to have stable environment for running UI tests, locally but on the bui
 
 #### Pattern: Test setups Test Data while testing
 
-*Solution*: 
+*Solution*: Test data is setup in each test, by reading it from some file, such as .json. 
 
 *Advantages*:
 
