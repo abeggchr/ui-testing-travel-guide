@@ -334,6 +334,7 @@ In order to have stable environment for running UI tests, locally but on the bui
 *Advantages*:
 
 * tests that are faster, more focused, and more reliable.
+* almost every modern programming language has libraries that can be used to make REST API calls.
 
 *Drawbacks*: 
 
