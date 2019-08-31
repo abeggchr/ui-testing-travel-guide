@@ -29,12 +29,13 @@ For this presentation we not only brought together our own experience but we als
 
 ### Overview
 
-Our presentation is structured in four parts:
+Our presentation is structured in following five parts:
 
 * How to develop
 * What to test
 * How to setup a stable environment
-* How to implement reliable tests 
+* How to implement maintainble tests 
+* How to implement reliable tests
 
 ## How to develop
 
