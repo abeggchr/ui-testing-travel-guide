@@ -275,11 +275,11 @@ In order to have stable environment for running UI tests, locally but on the bui
 
 #### Pattern: DB Dump
 
-*Solution*: 
+*Solution*: Using a (pre)created DB dump, which is restored before Test Suite start running.
 
 *Advantages*:
 
-* restoring a DB snapshot/backup allows to start testing very fast
+* restoring a DB snapshot/backup allows to start testing very fast.
 
 *Drawbacks*: 
 
