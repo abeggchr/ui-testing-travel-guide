@@ -291,7 +291,7 @@ In order to have stable environment for running UI tests, locally but on the bui
 
 #### Pattern: Test Data Generator
 
-*Solution*: 
+*Solution*: Use a Test Data Generator (app), before running test to setup test data.
 
 *Advantages*:
 
