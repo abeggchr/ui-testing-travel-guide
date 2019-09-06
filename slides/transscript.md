@@ -423,6 +423,7 @@ Page Objects include different kinds of constructs, such as basic elements, nest
 *Advantages*:
 
 * more reliable
+* easier to maintain
 
 *Drawbacks*: 
 
