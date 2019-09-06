@@ -232,6 +232,8 @@ With so many libraries and applications (Browser, Selenium Server, Selenium libr
 
 In order to have stable environment for running UI tests, locally but on the build server also, we need to fix versions of Selenium Server, Chrome driver version, as well as NPM package version which is used to install Selenium standalone. They need to be the same on the build server as it is locally, so that we can have reliable tests.
 
+Locally, we can use scripts such as PowerShell cmldets or batch scripts to install and run correct versions of those components (npm package, etc.). On the (build/test) server similar can be achieved by using preinstalled environments, such as environment in a Docker image.
+
 ### External Systems
 
 *Problem*: Systems outside of your application are not under your control. They might be running or might be down. They might return what is specified in the interface agreement or the might return something else. When you are testing end-to-end, you have to specify where the end is. One definition could be from one external system, through your application to another external system. In order to have a stable environment where you can run automated tests reliably, you have to bring these external systems under control.
