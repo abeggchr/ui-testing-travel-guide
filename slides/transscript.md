@@ -372,23 +372,26 @@ In order to have stable environment for running UI tests, locally but on the bui
 
 *Problem*: Instead of ad-hoc interactions with a page, a test controls the page using an instance that represents the page user interface.
 
-*Solution*: Page Objects are used to make end-to-end tests readable and easy to maintain. 
+*Solution*: Page Objects are used to make end-to-end tests readable and easy to maintain  =by encapsulating information about the elements on application page.
+
+Page Objects include different kinds of constructs, such as basic elements, nested selectors, etc.
+
+* Basic Elements rovide classes for basic html Elements, like for example a button, a button then has the method click() whereas a representation of the basic html element textarea does not have click() but something like setText().
+
+* Nested selectors: a page object is responsible for a certain area of the complete screen, localized by a selector (i.e. main-content). A specific element (like a button) exposed by this page object is (almost) always contained in the surrounding area. That means, the selector can be combined/nested. In this case as css selector: .main-content > button.
 
 *Advantages*:
 
-* They keep all page element selectors in one place.
+* They keep all page element selectors in one place (no duplication).
 * They standardize how tests interact with the page.
+* They decouple testing code from the application.
 
 *Drawbacks*: 
 
-*
-
-From related article "App Action":
-
-* Page objects are hard to maintain and take away time from actual application development. I have never seen PageObjects documented well enough to actually help one write tests.
-* Page objects introduce additional state into the tests, which is separate from the application’s internal state. This makes understanding the tests and failures harder.
-* Page objects try to fit multiple cases into a uniform interface, falling back to conditional logic - a huge anti-pattern in our opinion.
-* Page objects make tests slow because they force the tests to always go through the application user interface.
+* Hard to maintain and take away time from actual application development. I have never seen PageObjects documented well enough to actually help one write tests.
+* Introduce additional state into the tests, which is separate from the application’s internal state. This makes understanding the tests and failures harder.
+* Try to fit multiple cases into a uniform interface, falling back to conditional logic - a huge anti-pattern in our opinion.
+* Make tests slow because they force the tests to always go through the application user interface.
 
 *Related Pattern*: "App Actions" (see https://www.cypress.io/blog/2019/01/03/stop-using-page-objects-and-start-using-app-actions/)
 
