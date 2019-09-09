@@ -5,24 +5,21 @@ _Note: do not write down project or customer names here as this file will be che
 ## Introduction
 
 ### Topic
-
-This sessions topic is about UI testing. We called it the "UI testing travel guide" because you can compare introducing UI tests to a project to traveling to a new country. You will go to new places and this travel guide helps you to visit (like implement) the sights worth visiting and avoid the dark corners.
+Before everything, let us give you a little bit of context. This session is about UI testing in general and how to introduce UI testing concept into project. We called it metapforically the "UI testing travel guide" because you can make a parallel between this and traveling to a new country. We will advise which places are worth of visiting and how to avoid dark corners. In the end you will see how to adopt the best of this experience.
 
 ### Claim
-
-We claim that you can implement a reliable UI test suite using a Selenium-based approach which will strengthen your safety net.
+Regarding our knowledge and our practical experience that we gained from the projects, we claim that you can implement a reliable UI test suite using a Selenium-based approach which will make your safety net stronger.
 
 ### About us
 
-Why are we standing here? Obviously because you voted for our session. Thanks for that.
-But also: We worked together in the same project. And one of the firsts tasks there was to introduce UI testing. 
+We met on some of the existing projects in the phase when UI testing had been introduced. 
 
 So, I am ...
 * Marija
 * Milan
 * Christian
 
-For this presentation we not only brought together our own experience but we also talked with a lot of people from inside and outside of Zühlke. So we will present you the condensed knowledge of the following projects:
+For this presentation we not only brought together our own experience but we also talked with a lot of people from inside and outside of Zühlke. So we will show all the information, tips and tricks that we gathered from the following list:
 
 * list of projects
 * 
