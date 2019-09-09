@@ -5,10 +5,10 @@ _Note: do not write down project or customer names here as this file will be che
 ## Introduction
 
 ### Topic
-Before everything, let us give you a little bit of context. This session is about UI testing in general and how to introduce UI testing concept into project. We called it metapforically the "UI testing travel guide" because you can make a parallel between this and traveling to a new country. We will advise which places are worth of visiting and how to avoid dark corners. In the end you will see how to adopt the best of this experience.
+Before everything, let us give you a little bit of context. This session is about UI testing in general and how to introduce UI testing concept into the project. We called it metaphorically "UI testing travel guide" because you can make a parallel between this and traveling to a new country. We will advise which places are worth of visiting and how to avoid dark corners. In the end you will see how to adopt the best of this experience.
 
 ### Claim
-Regarding our knowledge and our practical experience that we gained from the projects, we claim that you can implement a reliable UI test suite using a Selenium-based approach which will make your safety net stronger.
+Regarding our knowledge and our practical experience that we gained from other projects, we claim that you can implement a reliable UI test suite using a Selenium-based approach which will make your safety net stronger.
 
 ### About us
 
@@ -19,7 +19,7 @@ So, I am ...
 * Milan
 * Christian
 
-For this presentation we not only brought together our own experience but we also talked with a lot of people from inside and outside of Zühlke. So we will show all the information, tips and tricks that we gathered from the following list:
+For this presentation we not only brought together our own experience but we also talked with a lot of people from inside and outside of Zühlke. So we will share with you all the informations, tips and tricks that we gathered from the following list:
 
 * list of projects
 * 
