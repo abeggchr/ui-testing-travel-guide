@@ -5,7 +5,7 @@ _Note: do not write down project or customer names here as this file will be che
 ## Introduction
 
 ### Topic
-Before everything, let us give you a little bit of context. This session is about UI testing in general and how to introduce UI testing concept into the project. We called it metaphorically "UI testing travel guide" because you can make a parallel between this and traveling to a new country. We will advise which places are worth of visiting and how to avoid dark corners. In the end you will see how to adopt the best of this experience.
+Before everything, let us give you a little bit of context. This session is about UI testing in general and how to introduce UI testing concept into the project. We called it metaphorically "UI testing travel guide" because you can make a parallel between this and traveling to a new country. We will advise you which places are worth of visiting and how to avoid dark corners. In the end you will see how to adopt the best of this experience.
 
 ### Claim
 Regarding our knowledge and our practical experience that we gained from other projects, we claim that you can implement a reliable UI test suite using a Selenium-based approach which will make your safety net stronger.
@@ -35,7 +35,7 @@ Our presentation is structured in following five parts:
 
 ### Consider Alternatives
 
-First of all, you have to decide whether or not to use Selenium at all. You can model persona for your team and according to its prefrences, strengths and what you actually want to detect and make with the test you can choose the tool. So what are the alternatives?
+First of all, you have to decide whether or not to use Selenium at all. You can model persona for your team and according to their prefrences, strengths and what you actually want to detect and achieve with the tests you can choose the tool. So what are the alternatives?
 
 * Cypress - Open source, tests are written using Mocha and Chai, tests are running in real time in  browser. Extremely popular, for pro js developers, no paralellization od the tests and it is restricted to Chrome.
 * Cucumber - BDD approach, Gherkin syntax. It is the simple, lightweight and structured language that used to describe features, requirements, and scenarios.
@@ -47,11 +47,11 @@ Now when you know where is your team strong at and what you want to achieve with
 #### Features that every UI testing tool has to consider
 * Minimal installation and setup pain - if it takes the days and if you need dedicated proffesional for this, skip it. UI testing is anyway slow process, who needs more days for installation only?
 * Speed - More and more features are comming, more and more features need to be tested. If you need more than 30 minutes for test suite, you should probably find another tool
-* Test case recording
 * Support for debugging - anything smarter than step by step debugging and logging would be a plus.
 * Test/Test steps reuse - you will for sure  have a need to repeat test  steps among the tests. Better to have a way to reuse this.
 * Beginner-friendliness and short learning curve - UI testing falls on the shoulders of manual QAs or even non-QA staff. So wouldn’t it be great to have a tool that’s simple?
 * Smart handling of timeouts - No matter how great you are at coding your tests, no person can possibly like to hand-code workarounds for test timeouts
+* Big community - avoid brand new tools, you would need documentation and people who were encountaring issues same that you will
 * CI support - Must have
 
 
