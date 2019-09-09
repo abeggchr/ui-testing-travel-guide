@@ -52,6 +52,8 @@ There are commercial products like "Ranorex" or "Tosca". The come with a price t
 * test case recording
 * test-data setup
 
+Now when you know where is your team strong at and what you want to achieve with the UI tests, you have to request some features that your tool should have if you want to have this journey successful in long-term way.
+
 #### Features that every UI testing tool has to consider
 * Minimal installation and setup pain - if it takes the days and if you need dedicated proffesional for this, skip it. UI testing is anyway slow process, who needs more days for installation only?
 * Speed - More and more features are comming, more and more features need to be tested. If you need more than 30 minutes for test suite, you should probably find another tool
@@ -92,14 +94,7 @@ You can think about every needed feature of the tool in format of Problem, Solut
 *Related Pattern*: The alternative is to implement test yourself. 
 
 #### Challengers
-
-In the area of open software, there are currently strong challengers for Selenium. "Puppeteer" provides a high-level API to control a Chrome browser. It is very thight integrated which allows to control the browser in more ways than Selenium can. 
-
-"Cypress" works with the same approach. It is tightly integrated with a Chrome browser. And, in addition to "Puppeteer" it offers amazing test running, test recording and test debuging possibilities. If you cannot restrict yourself to Chrome, then an alternative is "TestCafé".
-
-While Selenium is restricted to black-box testing, a thight browser integration also allows for more white-box testing approach. For example, in the test code, you can mock backend-calls or you can emit an event inside your application.
-
-All in all: "Cypress" is definitely worth evaluating. We will stick to Selenium in this presentation as this is the area where we gathered knowledge in many projects.  
+Comparing with other tools which offers this feature
 
 ### How does Selenium work
 
