@@ -78,7 +78,13 @@ Now the question is, how to control the Selenium server. There are libraries in 
 #### Demo: Basic test case in TypeScript
 
 Selenium also offers a tool to record. This is called *Selenium IDE*. It lets you quickly record a test case.
+#### Demo: Test case recoding with Selenium
 
+![Selenium IDE Basic Test](./img/selenium-ide-basic-test.png)
+
+The previous example is example of test pattern. You can think about every pattern and elaborate it in format of Problem, Soultion, Advanatages and Drawbacks.
+
+Let's show it how would be this analyzed:
 
 #### Pattern: Test case recording
 
@@ -101,9 +107,6 @@ Selenium also offers a tool to record. This is called *Selenium IDE*. It lets yo
 
 *Related Pattern*: The alternative is to implement test yourself. 
 
-#### Demo: Test case recoding with Selenium
-
-![Selenium IDE Basic Test](./img/selenium-ide-basic-test.png)
 ## What to test?
 
 top of the test pyramid
