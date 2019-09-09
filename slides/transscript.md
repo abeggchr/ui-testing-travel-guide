@@ -102,17 +102,9 @@ BrowserDriver implementation per Browser
 
 controlls the Browser
 
-### TypeScript vs. C# or Java
+### How to control,TypeScript vs. C# or Java
 
 Now the question is, how to control the Selenium server. There are libraries in JavaScript, C#, Java, Ruby and Phyton to control the API exposed by the Selenium server.
-
-Criterias:
-
-* How comfortable do you (or your team) feel with working with this language
-  * tooling
-  * refactoring possibilities 
-* Debugging
-* Test data creation (we'll come back to this later)
 
 #### Demo: Basic test case in C# and in TypeScript
 
