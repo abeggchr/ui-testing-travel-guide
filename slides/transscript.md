@@ -52,17 +52,26 @@ There are commercial products like "Ranorex" or "Tosca". The come with a price t
 * test case recording
 * test-data setup
 
-What both of them have in common is the ability to also run Selenium tests. Ranorex refers to Selenium as "todays web test automation standard".
+#### Features that every UI testing tool has to consider
+* Minimal installation and setup pain
+* Speed
+* Codeless UI tests
+* Test case recording
+* Support for debugging
+* Test/Test steps reuse
+* Beginner-friendliness and short learning curve
+* Smart handling of timeouts
+* CI support
 
-Regarding the last point, test case recording, Selenium also offers a tool to record. This is called *Selenium IDE*. It lets you quickly record a test case.
+Selenium also offers a tool to record. This is called *Selenium IDE*. It lets you quickly record a test case.
 
 #### Demo: Test case recoding with Selenium
 
 ![Selenium IDE Basic Test](./img/selenium-ide-basic-test.png)
 
-This leads us to a first pattern. We try to describe patterns in the form of Problem, Solution, Advantages, Drawbacks
+You can think about every needed feature of the tool in format of Problem, Solution, Advantages, Drawbacks
 
-#### Pattern: Test case recording
+#### Feature: Test case recording
 
 *Problem*: Test case implementation is costly. It takes quite some time to implement a UI test. Non-functional requirements of a UI test include:
 
