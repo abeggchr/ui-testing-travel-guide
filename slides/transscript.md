@@ -19,10 +19,7 @@ So, I am ...
 * Milan
 * Christian
 
-For this presentation we not only brought together our own experience but we also talked with a lot of people from inside and outside of Zühlke. So we will share with you all the informations, tips and tricks that we gathered from the following list:
-
-* list of projects
-* 
+During this slot we will share with you all the insights, tips and tricks that we gathered from other projects, but most valueable thing that we bring is from the current one where we had exclusive opportunity to see how UI testing is developed and introduced from scratch.
 
 ### Overview
 
