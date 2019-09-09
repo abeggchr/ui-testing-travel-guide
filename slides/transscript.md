@@ -64,13 +64,9 @@ Now when you know where is your team strong at and what you want to achieve with
 * Smart handling of timeouts - No matter how great you are at coding your tests, no person can possibly like to hand-code workarounds for test timeouts
 * CI support - Must have
 
-Selenium also offers a tool to record. This is called *Selenium IDE*. It lets you quickly record a test case.
-
-#### Demo: Test case recoding with Selenium
-
-![Selenium IDE Basic Test](./img/selenium-ide-basic-test.png)
 
 You can think about every needed feature of the tool in format of Problem, Solution, Advantages, Drawbacks
+Let's elaborate one of the features that we want to have with our tool (Test case recording).
 
 #### Feature: Test case recording
 
@@ -120,6 +116,11 @@ Criterias:
 
 #### Demo: Basic test case in C# and in TypeScript
 
+Selenium also offers a tool to record. This is called *Selenium IDE*. It lets you quickly record a test case.
+
+#### Demo: Test case recoding with Selenium
+
+![Selenium IDE Basic Test](./img/selenium-ide-basic-test.png)
 ## What to test?
 
 top of the test pyramid
