@@ -35,11 +35,11 @@ Our presentation is structured in following five parts:
 
 ### Consider Alternatives
 
-First of all, you have to decide whether or not to use Selenium at all. You can model persona for your team and according to its prefrences and strengths you can choose the tool. So what are the alternatives?
+First of all, you have to decide whether or not to use Selenium at all. You can model persona for your team and according to its prefrences, strengths and what you actually want to detect and make with the test you can choose the tool. So what are the alternatives?
 
 * Cypress - Open source, tests are written using Mocha and Chai, tests are running in real time in  browser. Extremely popular, for pro js developers, no paralellization od the tests and it is restricted to Chrome.
 * Cucumber - BDD approach, Gherkin syntax. It is the simple, lightweight and structured language that used to describe features, requirements, and scenarios.
-* TestCafe - restricted to js. Hard to run on multiple browsers, faster and easier installaion. Better support for debugging. New tool - small community.
+* TestCafe - restricted to js. Hard to run on multiple browsers, faster and easier installation. Better support for debugging. New tool - small community.
 * Katalon Studio - Record/playback with page object models support. Software tool, has been built with readily usable features. You just need to configure the software and use it for automation. Programming knowledge not required.
 
 #### Commercial Products
