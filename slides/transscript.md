@@ -65,8 +65,8 @@ Now when you know where is your team strong at and what you want to achieve with
 * CI support - Must have
 
 
-You can think about every needed feature of the tool in format of Problem, Solution, Advantages, Drawbacks
-Let's elaborate one of the features that we want to have with our tool (Test case recording).
+You can think about every needed feature of the tool in format of Problem, Solution, Advantages, Drawbacks.
+Let's elaborate one of the features that we want to have within our tool.
 
 #### Feature: Test case recording
 
