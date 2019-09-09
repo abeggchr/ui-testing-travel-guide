@@ -71,18 +71,19 @@ There are commercial products like "Ranorex" or "Tosca". The come with a price t
 * The Selenium Server takes care of interpreting commands from the test and forwarding them to one or more browsers. Communication between the server and the browser uses the WebDriver Wire Protocol, a JSON protocol. The command is interpreted by the Browser Driver.
 * The implemenation depends on drivers. For Chrome it is a Chrome driver, for Firefox it is an extension.
 
-### How to control,TypeScript vs. C# or Java
+### How to control Selenium
 
-Now the question is, how to control the Selenium server. There are libraries in JavaScript, C#, Java, Ruby and Phyton to control the API exposed by the Selenium server.
+Now the question is, how to control the Selenium server. There are libraries in JavaScript, C#, Java, Ruby and Phyton to control the API exposed by the Selenium server. For example WebDriverJS is JavaScript bindings for the Selenium WebDriver API. Protractor is wrapper around this WebDriverJS. By choosing language in which you want to write your tests, you are choosing the library which controls API by Selenium Server.
 
-#### Demo: Basic test case in TypeScript
+#### Demo: Basic test case in TypeScript using library Protractor
+
 
 Selenium also offers a tool to record. This is called *Selenium IDE*. It lets you quickly record a test case.
 #### Demo: Test case recoding with Selenium
 
 ![Selenium IDE Basic Test](./img/selenium-ide-basic-test.png)
 
-The previous example is example of test pattern. You can think about every pattern and elaborate it in format of Problem, Soultion, Advanatages and Drawbacks.
+The previous example is example of test pattern. You can think about every pattern and elaborate it in format of Problem, Solution, Advanatages and Drawbacks.
 
 Let's show it how would be this analyzed:
 
