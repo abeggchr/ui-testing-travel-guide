@@ -42,16 +42,6 @@ First of all, you have to decide whether or not to use Selenium at all. You can 
 * TestCafe - restricted to js. Hard to run on multiple browsers, faster and easier installation. Better support for debugging. New tool - small community.
 * Katalon Studio - Record/playback with page object models support. Software tool, has been built with readily usable features. You just need to configure the software and use it for automation. Programming knowledge not required.
 
-#### Commercial Products
-
-There are commercial products like "Ranorex" or "Tosca". The come with a price tag and a lot of features you probably do not need like:
-
-* test case management
-* testing non-web UIs 
-* test data generation
-* test case recording
-* test-data setup
-
 Now when you know where is your team strong at and what you want to achieve with the UI tests, you have to request some features that your tool should have if you want to have this journey successful in long-term way.
 
 #### Features that every UI testing tool has to consider
@@ -65,10 +55,32 @@ Now when you know where is your team strong at and what you want to achieve with
 * CI support - Must have
 
 
-You can think about every needed feature of the tool in format of Problem, Solution, Advantages, Drawbacks.
-Let's elaborate one of the features that we want to have within our tool.
+#### Commercial Products
 
-#### Feature: Test case recording
+There are commercial products like "Ranorex" or "Tosca". The come with a price tag and a lot of features you probably do not need like:
+
+* test case management
+* testing non-web UIs 
+* test data generation
+* test case recording
+* test-data setup
+
+### How does Selenium work
+
+* Selenium server (either standalone as jar on your local machine or remotely via service)
+* The Selenium Server takes care of interpreting commands from the test and forwarding them to one or more browsers. Communication between the server and the browser uses the WebDriver Wire Protocol, a JSON protocol. The command is interpreted by the Browser Driver.
+* The implemenation depends on drivers. For Chrome it is a Chrome driver, for Firefox it is an extension.
+
+### How to control,TypeScript vs. C# or Java
+
+Now the question is, how to control the Selenium server. There are libraries in JavaScript, C#, Java, Ruby and Phyton to control the API exposed by the Selenium server.
+
+#### Demo: Basic test case in TypeScript
+
+Selenium also offers a tool to record. This is called *Selenium IDE*. It lets you quickly record a test case.
+
+
+#### Pattern: Test case recording
 
 *Problem*: Test case implementation is costly. It takes quite some time to implement a UI test. Non-functional requirements of a UI test include:
 
@@ -88,27 +100,6 @@ Let's elaborate one of the features that we want to have within our tool.
 * selectors might not be detected as you wish
 
 *Related Pattern*: The alternative is to implement test yourself. 
-
-#### Challengers
-Comparing with other tools which offers this feature
-
-### How does Selenium work
-
-Selenium server (either standalone or started locally)
-
-using WebDriver protocol (specification: https://w3c.github.io/webdriver/)
-
-BrowserDriver implementation per Browser
-
-controlls the Browser
-
-### How to control,TypeScript vs. C# or Java
-
-Now the question is, how to control the Selenium server. There are libraries in JavaScript, C#, Java, Ruby and Phyton to control the API exposed by the Selenium server.
-
-#### Demo: Basic test case in C# and in TypeScript
-
-Selenium also offers a tool to record. This is called *Selenium IDE*. It lets you quickly record a test case.
 
 #### Demo: Test case recoding with Selenium
 
