@@ -142,7 +142,16 @@ Non-functional requirements of a UI test include:
 
 #### Pattern: Very few (< 10) UI tests
 
-*Solution*: Design the tests so that they cover all possible connections between the components. Example: You have an we wich hosts the UI, an applicaiton server for the business logic (420 use cases), a job server for report creation (there are 500 different reports) and an distribution system for sending emails (42 different templates in 8 different languages). For that scenario there might be two test cases: one case creating a single report and another one calling the distribution service. 
+*Solution*: Design the tests so that they cover all possible connections between the components. 
+
+Example: You have:
+
+* a browser wich hosts the UI
+* an application server for the business logic (420 use cases)
+* a job server for report creation (there are 500 different reports)
+* a distribution system for sending emails (42 different templates in 8 different languages)
+
+For that scenario there might be 2 test cases: one case creating a single report and another one calling the distribution service. 
 
 *Advantages*:
 
@@ -153,7 +162,7 @@ Non-functional requirements of a UI test include:
 *Drawbacks*: 
 
 * there might be still a gap between what you can cover in lower stage tests and what you cover with UI tests
-* documentation
+* documentation through UI tests is not complete
 
 *Related Pattern*: see other patterns in this chapter "Granularity"
 
